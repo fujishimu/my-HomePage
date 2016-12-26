@@ -6,11 +6,35 @@ html(lang="ja")
     title remember your forest
     link(rel="stylesheet", type="text/css", href="css/style.css")
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+    script(src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js")
 
   body
-    #layerBack
-      #layerTop
+    #mainWrapper
+      #human
+        img.items(src="img/human.png")
+      #textBox
+        #title
+          h4 remember your forest
+          h2 hello from fjsmu to you
+        #contents
+          .news 
+            h3 news
+          .about
+            h3 about
+          .contact
+            h3 contact
+          .link
+            h3 link
+      #mainContents
+        include template/_news.jade
+        include template/_about.jade
+        include template/_contact.jade
+        include template/_link.jade
+      
+
     #footer
+      h3 fjsmu.com  
+      small &copy; copyright 2016@fjsmu.com
 
     script(src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js")
-    script(type="text/javascript", src="js/motion.js")
+    script(type="text/javascript", src="js/javascript.js")
