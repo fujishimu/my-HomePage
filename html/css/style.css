@@ -10,31 +10,36 @@ html {
 
 body {
   background-color: #ffffff;
-  width: 100vw;
   margin: 0;
   padding: 0;
+  padding-left: 5vw;
 }
 
 h5 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 220%;
+  font-size: 40px;
 }
 
 h4 {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 200%;
+  font-size: 38px;
   margin-bottom: 0;
 }
 
 h3 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.5vw;
+  font-size: 3px;
   color: #5d5d5d;
 }
 
 h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 115%;
+}
+
+a {
+  text-decoration: none;
+  color: #5d5d5d;
 }
 
 p {
@@ -47,41 +52,51 @@ span {
   color: #585858;
 }
 
-
 #mainWrapper {
-  width: 80vw;
-  margin: 0 auto;
-  margin-top: 2vh;
+  width: 85vw;
+  height: 95vh;
+  margin: 2vh 0 0 3vw;
+  overflow: auto;
 }
 
-
-#human {
-  position: relative;
-  top: 500px;
-  left: 10vw;
+#news {
+  float: left;
+  margin: 15vw 0 0 10vw;
+  height: 17vh;
+  overflow: scroll;
 }
 
-#human img.items {
-  width: 5%;
-  height: 5%;
+#news h5 {
+  font-size: 20px;
+  margin: 0 0 0 15px;
+}
+
+#news .article {
+  margin-top: 10px;
+  padding-left: 0.4vw;
+}
+
+#news p {
+  margin: 0 0 0 10px;
+  font-size: 12px;
+}
+
+#news span {
+  font-size: 10px;
+  margin: 0 0 0 10px;
 }
 
 #textBox {
-  position: absolute;
-  margin-right: 20%;
-  left: 60%;
-  top : 10%;
-}
-
-#textBox h2 {
-  margin: 0;
-  padding: 10px 0 0 0;
   float: right;
+  margin-right: 5vw;
+  left: 60%;
+  top : 5%;
 }
 
 #contents {
-  margin-top: 50px;
+  top: 20px;
 }
+
 
 #contents h3 {
   width: 40%;
@@ -89,92 +104,102 @@ span {
   border-left: 1px solid #ada9a9;
   padding: 3px;
   margin-bottom: 0;
-  cursor: pointer;
+  font-size: 18px;
 }
 
 #contents p {
-  font-size: 90%;
+  font-size: 90px;
 }
 
-#contents .about .contact .link {
-  position: absolute;
+.mainContents {
+  padding: 2vh 3vw 0 0;
 }
 
-#contents .article {
-  border-bottom: 1px solid #dadada;
-  padding-top: 20px;
-}
-
-#contents .article p {
-  display: inline;
-  padding-top: 0;
-  /*float: left;*/
-}
-
-#contents .article time {
-  display: inline;
-  font-size: 50%;
-  padding-top: 4px;
-  /*float: right;*/
-}
-
-#mainContents {
-  position: absolute;
-  /*width: 80vw;*/
-  left: 100vw;
-  top: 10vh;
-}
-
-#mainContents .mainContents {
-  position: absolute;
-  width: 80vw;
-}
-
-#mainContents .mainContents h5 {
-  width: 20%;
-  padding: 3px 3px 0px 8px;
-  margin-bottom: 0;
+.mainContents h5 {
+  padding: 3px 3px 3px 8px;
+  margin: 0;
   border-bottom: 1px solid #ada9a9;
   border-left: 1px solid #ada9a9;
 }
 
-#mainContents .mainContents p {
+.mainContents p {
   font-size: 90%;
 }
 
-#mainContents .mainContents p.name {
+.mainContents p.name {
   margin: 20px 0 0 0;
   font-size: 110%;
 }
 
-#mainContents .mainContents span {
+.mainContents span {
   padding-top: 0;
   font-size: 60%;
 }
 
-#mainContents .mainContents .backBtn h3 {
-  /*font-size: 200%;*/
+.mainContents .article {
+  /*border-bottom: 1px solid #d9d9d9;*/
+  padding-left: 0.5vw;
+  /*padding-bottom: 4vh;*/
+  margin-top: 4vh;
+  margin-bottom: 10vh;
+}
+.mainContents .article h2 {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.mainContents .article span {
+  float: right;
+}
+
+.mainContents .backBtn {
+  padding-bottom: 5vh;
+}
+
+.mainContents .backBtn h3 {
   border-bottom: 1px solid #ada9a9;
   border-left: 1px solid #ada9a9;
   padding: 3px;
-  float: right;
-  cursor: pointer;
+  margin-top: 10vh;
+  width: 2vw;
+  font-size: 15px;
+  /*float: right;*/
+}
+
+#human {
+  position: absolute;
+  top: 60vh;
+  right: 60vw;
+  opacity: 0;
+}
+
+#human img.items {
+  width: 5vw;
+}
+
+#human .angry {
+  position: absolute;
+  top: -20%;
+  /*right: 2vw;*/
+  padding-bottom: 30vh;
+  padding-left: 5vw;
 }
 
 #footer {
   bottom: 1vh;
-  left: 10vw;
-  position: absolute;
+  left: 5%;
+  position: fixed;
   height: 5vh;
   width: 90vw;
   margin: 2vh auto 0 auto;
 
+  background-color: #fff;
   border-top: 1px solid #ada9a9;
 }
 
 #footer h3 {
+  font-size: 20px;
   margin-top: 1vh;
-  padding-left: 5vw;
+  padding-left: 3vw;
   float: left;
 }
 

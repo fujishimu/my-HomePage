@@ -1,40 +1,30 @@
 doctype html
 html(lang="ja")
-  head
-    meta(charset="utf-8")
-    meta(name="view-port", content="width=device-width, initial-scale=1, maximum-scale=1")
-    title remember your forest
-    link(rel="stylesheet", type="text/css", href="css/style.css")
-    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
-    script(src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js")
+  include template/_head.jade
 
   body
-    #mainWrapper
+    #wrapper
+      #mainWrapper.animsition 
+        #textBox
+          #title
+            h4 remember your forest
+            h2 hello from fjsmu to you
+          #contents 
+              h3
+                a(href="news.html" class="animsition-link top-link") news
+              h3 
+                a(href="about.html" class="animsition-link top-link") about
+              h3 
+                a(href="product.html" class="animsition-link top-link") product  
+              h3
+                a(href="contact.html" class="animsition-link top-link") contact
+              h3 
+                a(href="link.html" class="animsition-link top-link") link
+        #news
+          include topNewsContents.jade
+        
       #human
+        img.items(src="img/angry.png" class="angry")
         img.items(src="img/human.png")
-      #textBox
-        #title
-          h4 remember your forest
-          h2 hello from fjsmu to you
-        #contents
-          .news 
-            h3 news
-          .about
-            h3 about
-          .contact
-            h3 contact
-          .link
-            h3 link
-      #mainContents
-        include template/_news.jade
-        include template/_about.jade
-        include template/_contact.jade
-        include template/_link.jade
-      
-
-    #footer
-      h3 fjsmu.com  
-      small &copy; copyright 2016@fjsmu.com
-
-    script(src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js")
-    script(type="text/javascript", src="js/javascript.js")
+    
+      include template/_footer.jade
