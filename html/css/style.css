@@ -40,6 +40,7 @@ h2 {
 a {
   text-decoration: none;
   color: #5d5d5d;
+  cursor: pointer;
 }
 
 p {
@@ -179,9 +180,9 @@ span {
 #human .angry {
   position: absolute;
   top: -20%;
-  /*right: 2vw;*/
+  /*right:
   padding-bottom: 30vh;
-  padding-left: 5vw;
+  /*padding-left: 5vw;*/
 }
 
 #footer {
